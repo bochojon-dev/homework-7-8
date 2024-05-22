@@ -1,0 +1,33 @@
+.products {
+  margin: 40px 0;
+  &__wrapper {
+    padding-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__card {
+    cursor: pointer;
+    width: 280px;
+    padding: 14px;
+    border: 1px solid gray;
+    .image1 {
+      display: none;
+    }
+    &:hover {
+      .image1 {
+        display: block;
+      }
+      .image0 {
+        display: none;
+      }
+    }
+    img {
+      width: 100%;
+      height: 250px;
+      object-fit: contain;
+    }
+  }
+}
